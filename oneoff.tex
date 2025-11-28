@@ -1,0 +1,49 @@
+\documentclass[11pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[MeX]{polski}
+\usepackage[a4paper, left=3.25cm, right=2.5cm, top=2.5cm, bottom=2.5cm, headsep=1.2cm]{geometry}
+\usepackage{titlesec}
+\titleformat{\chapter}[display]{\bfseries\centering}{}{0pt}{\Huge}[\newpage]
+\titleformat{\section}[display]{\normalfont\bfseries}{}{0pt}{\hspace{-0.75cm}\huge}
+\titlespacing{\section}{0pt}{50pt}{\parskip}
+\titleformat{\subsection}[block]{\normalfont\bfseries}{}{0pt}{}
+\usepackage{enumitem}
+\newlist{ingreds}{itemize}{1}
+\setlist[ingreds]{label=$\bullet$, leftmargin=*}
+
+\usepackage{tocloft}
+\renewcommand{\contentsname}{}
+\renewcommand{\numberline}[1]{}
+\setlength{\cftbeforetoctitleskip}{-1cm}
+
+\newcommand\opitem{\item[\textbf{$\ast$}]}
+\newcommand\recipara[1]{#1\par}
+\newcommand\commentskip{\vspace{0.75cm}}
+\newcommand\comment[1]{\textit{#1}\par}
+\newcommand\recipend{\newpage}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+\begin{document}
+
+\section{Cynamonowe śliweczki w karmelu Rozkosznego}
+
+\begin{ingreds}
+\item{śliwki, 500g}
+\item{kwaśna śmietana, 1.5 szklanki}
+\item{miód, 2 łyżki}
+\item{cynamon, 0.5 łyżeczki}
+\item{orzechy laskowe, 0.5 szklanki}
+\item{cukier, 0.5 szklanki}
+\item{ocet jabłkowy, 2 łyżki}
+\item{olej rzepakowy}
+\end{ingreds}
+
+\recipara{Kwaśną śmietanę umieścić na gęstym sitku nad miską i wstawić do lodówki do odsączenia na 30min -- 12 hprzed podaniem. Śliwki przekrój na pół, pozbądź się pestek. Orzechy laskowe można zblanszować -- uprażyć na patelni i zetrzeć skórkę ręcznikiem papierowym.}
+\recipara{Wysmarować oliwą mały arkusz papieru do pieczenia. Podrzać miód na małej patelni aż zawrze, dodać orzechy laskowe i 0.25 łyżeczki soli. Smażyć 3 minuty. Przełożyć je na natłuszczony papier do pieczenia. Posiekać grubo gdy zupełnie wystygną.}
+\recipara{Cukier do średniego garnka, 2 łyżki wody i gotować na średnim $\sim$5min, aż karmel będzie ciemnobursztynowy. Powoli dolewać ocet, następnie śliwki i cynamon. Duś 5min mieszając aż śliwki zmiękną i puszczą sok. Podawać z olejem rzepakowym, z jakiegoś powodu.}
+
+\commentskip
+
+\recipend
+\end{document}
